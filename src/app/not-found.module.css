@@ -1,0 +1,66 @@
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.notFoundContainer h1 {
+    font-size: 6rem;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: bounce 2s infinite;
+}
+
+.notFoundContainer h2 {
+    font-size: 2.2rem;
+    margin: 20px 0;
+    font-weight: 300;
+    color: #f1f1f1;
+    opacity: 0.9;
+}
+
+.notFoundContainer p {
+    font-size: 1.2rem;
+    margin: 20px 0 40px 0;
+    color: #e0e0e0;
+    max-width: 450px;
+    line-height: 1.5;
+}
+
+.notFoundLink {
+    padding: 15px 30px;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.notFoundLink:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
