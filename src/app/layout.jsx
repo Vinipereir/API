@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from 'react-toastify';
@@ -15,19 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Rick & Morty Explorer",
-  description: "Explore personagens e episódios do universo Rick and Morty",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-white text-gray-900 selection:bg-blue-200 selection:text-blue-900`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-white text-gray-900 selection:bg-blue-200 selection:text-blue-900`}>
         <main className="flex-1 w-full max-w-2xl mx-auto px-4 py-8 flex flex-col">
           {children}
         </main>
