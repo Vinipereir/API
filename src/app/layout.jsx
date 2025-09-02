@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-white text-gray-900 selection:bg-blue-200 selection:text-blue-900`}>
-        <main className="flex-1 w-full max-w-2xl mx-auto px-4 py-8 flex flex-col">
+          <main className="flex-1 w-full max-w-lg mx-auto px-4 py-12 flex flex-col justify-center">
           {children}
         </main>
         <ToastContainer
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           pauseOnHover
           theme="light"
           className="!mt-4"
-          toastClassName="relative flex p-1 min-h-10 rounded-lg justify-between overflow-hidden cursor-pointer bg-white/90 backdrop-blur-sm shadow-lg border border-gray-200/50 hover:shadow-xl transition-all duration-300"
+            toastClassName="relative flex p-1 min-h-10 rounded-lg justify-between overflow-hidden cursor-pointer bg-white/90 shadow border border-gray-200 hover:shadow-lg transition-all duration-300"
           progressClassName="!bg-gradient-to-r !from-blue-500 !to-purple-500"
         />
       </body>
